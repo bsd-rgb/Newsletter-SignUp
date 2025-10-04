@@ -1,0 +1,67 @@
+/* Variables */
+:root {
+  /* FONTS */
+
+  /* COLORS */
+  --BGCOLOR: #36384d;
+  --BGCOLOR-CARD: #fff;
+  --FONT-COLOR-BTN: #fff;
+  --BGCOLOR-BTN: #242742;
+  --FONT-COLOR: #242742;
+}
+
+/* Font Import */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/roboto-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/roboto-bold.woff2") format("woff2");
+}
+
+/* CSS Reset */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border-color: transparent;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
