@@ -13,17 +13,17 @@
 /* Font Import */
 @font-face {
   font-display: swap;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url("./assets/fonts/roboto-regular.woff2") format("woff2");
+  src: url('./assets/fonts/roboto-regular.woff2') format('woff2');
 }
 @font-face {
   font-display: swap;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url("./assets/fonts/roboto-bold.woff2") format("woff2");
+  src: url('./assets/fonts/roboto-bold.woff2') format('woff2');
 }
 
 /* CSS Reset */
@@ -64,9 +64,42 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--BGCOLOR);
+  color: var(--FONT-COLOR);
 }
 
 .hidden {
   display: none;
+}
+
+main {
+  margin: 20rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* SECTION: Call to Action (cta) */
+
+.section__cta {
+  background-color: var(--BGCOLOR-CARD);
+  padding: 4rem;
+  font-size: 1.6rem;
+}
+
+.cta__heading {
+  font-size: 5.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.cta__subheading {
+  margin-bottom: 2.4rem;
+}
+
+.list__item {
+  display: flex;
+  gap: 1.2rem;
 }

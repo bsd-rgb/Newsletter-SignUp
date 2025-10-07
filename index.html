@@ -5,16 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
-    <title>
-      Frontend Mentor | Newsletter sign-up form with success message
-    </title>
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
     <link
       rel="preload"
       href="./assets/fonts/roboto-regular.woff2"
@@ -34,34 +27,39 @@
   </head>
   <body>
     <main>
-      <article class="section__cta">
-        <h1 class="cta__header">Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul class="cta__list">
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
-        </ul>
+      <article class="section__cta grid">
+        <div class="cta__text">
+          <h1 class="cta__heading">Stay updated!</h1>
+          <p class="cta__subheading">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="cta__list">
+            <li class="list__item">
+              <img src="./assets/images/icon-list.svg" />
+              <span>Product discovery and building what matters</span>
+            </li>
+            <li class="list__item">
+              <img src="./assets/images/icon-list.svg" /><span
+                >Measuring to ensure updates are a success</span
+              >
+            </li>
+            <li class="list__item">
+              <img src="./assets/images/icon-list.svg" /><span>And much more!</span>
+            </li>
+          </ul>
 
-        <!-- Sign-up form start -->
-        <form class="form__cta">
-          <label for="email">Email address</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="email@company.com"
-          />
-          <button class="btn form__btn">Subscribe to monthly newsletter</button>
-        </form>
-
+          <!-- Sign-up form start -->
+          <form class="cta__form">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="email@company.com" />
+            <button class="btn btn__form">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+        <div class="cta__img">IMAGE FOR CTA</div>
         <!-- Sign-up form end -->
 
         <!-- Success message start -->
         <section class="success-message hidden">
-          Thanks for subscribing! A confirmation email has been sent to
-          ash@loremcompany.com. Please open it and click the button inside to
-          confirm your subscription. Dismiss message
+          Thanks for subscribing! A confirmation email has been sent to ash@loremcompany.com. Please
+          open it and click the button inside to confirm your subscription. Dismiss message
         </section>
 
         <!-- Success message end -->
@@ -70,8 +68,7 @@
   </body>
   <footer class="attribution">
     Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-      >Frontend Mentor</a
-    >. Coded by <a href="#">Your Name Here</a>.
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded
+    by <a href="#">Your Name Here</a>.
   </footer>
 </html>
