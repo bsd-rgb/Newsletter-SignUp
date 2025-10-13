@@ -8,6 +8,9 @@
   --FONT-COLOR-BTN: #fff;
   --BGCOLOR-BTN: #242742;
   --FONT-COLOR: #242742;
+  --BORDER-COLOR: #949494;
+
+  /* SHADOWS */
 }
 
 /* Font Import */
@@ -86,8 +89,12 @@ main {
 
 .section__cta {
   background-color: var(--BGCOLOR-CARD);
-  padding: 4rem;
+  padding: 4em;
   font-size: 1.6rem;
+}
+
+.cta__text {
+  max-width: 40rem;
 }
 
 .cta__heading {
@@ -99,7 +106,41 @@ main {
   margin-bottom: 2.4rem;
 }
 
+.cta__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
 .list__item {
   display: flex;
   gap: 1.2rem;
+}
+
+.cta__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cta__form label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.cta__form input {
+  border: 1px solid var(--BORDER-COLOR);
+  border-radius: 9px;
+  padding: 1.2em;
+  margin-bottom: 1.8rem;
+}
+
+.btn__form {
+  background-color: var(--BGCOLOR-BTN);
+  color: var(--FONT-COLOR-BTN);
+  border-radius: 9px;
+  padding: 1em;
+  font-weight: 700;
 }
