@@ -85,6 +85,11 @@ main {
   grid-template-columns: 1fr 1fr;
 }
 
+.heading-primary {
+  font-size: 5.6rem;
+  margin-bottom: 2.4rem;
+}
+
 /* SECTION: Call to Action (cta) */
 
 .section__cta {
@@ -98,11 +103,6 @@ main {
 .cta__text {
   max-width: 40rem;
   margin-top: 6.4rem;
-}
-
-.cta__heading {
-  font-size: 5.6rem;
-  margin-bottom: 2.4rem;
 }
 
 .cta__subheading {

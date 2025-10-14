@@ -29,20 +29,20 @@
     <main>
       <article class="section__cta grid">
         <div class="cta__text">
-          <h1 class="cta__heading">Stay updated!</h1>
+          <h1 class="heading-primary">Stay updated!</h1>
           <p class="cta__subheading">Join 60,000+ product managers receiving monthly updates on:</p>
           <ul class="cta__list">
             <li class="list__item">
-              <img src="./assets/images/icon-list.svg" />
+              <img src="./assets/images/icon-list.svg" alt="" />
               <span>Product discovery and building what matters</span>
             </li>
             <li class="list__item">
-              <img src="./assets/images/icon-list.svg" /><span
+              <img src="./assets/images/icon-list.svg" alt="" /><span
                 >Measuring to ensure updates are a success</span
               >
             </li>
             <li class="list__item">
-              <img src="./assets/images/icon-list.svg" /><span>And much more!</span>
+              <img src="./assets/images/icon-list.svg" alt="" /><span>And much more!</span>
             </li>
           </ul>
 
@@ -59,10 +59,16 @@
         <!-- Sign-up form end -->
 
         <!-- Success message start -->
-        <section class="success-message hidden">
-          Thanks for subscribing! A confirmation email has been sent to ash@loremcompany.com. Please
-          open it and click the button inside to confirm your subscription. Dismiss message
-        </section>
+        <div class="form__success">
+          <h1 class="heading-primary">Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to
+            <span class="user-email">ash@loremcompany.com</span>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+          <button class="btn">Dismiss message</button>
+        </div>
+        \
 
         <!-- Success message end -->
       </article>
