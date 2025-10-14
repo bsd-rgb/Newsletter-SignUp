@@ -90,6 +90,14 @@ main {
   margin-bottom: 2.4rem;
 }
 
+.btn {
+  background-color: var(--BGCOLOR-BTN);
+  color: var(--FONT-COLOR-BTN);
+  border-radius: 9px;
+  padding: 1em;
+  font-weight: 700;
+}
+
 /* SECTION: Call to Action (cta) */
 
 .section__cta {
@@ -140,14 +148,12 @@ main {
   margin-bottom: 1.8rem;
 }
 
-.btn__form {
-  background-color: var(--BGCOLOR-BTN);
-  color: var(--FONT-COLOR-BTN);
-  border-radius: 9px;
-  padding: 1em;
-  font-weight: 700;
-}
-
 .cta__img {
   justify-self: end;
+}
+
+/* Success Message */
+
+.user-email {
+  font-weight: 700;
 }
