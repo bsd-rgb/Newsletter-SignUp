@@ -89,12 +89,15 @@ main {
 
 .section__cta {
   background-color: var(--BGCOLOR-CARD);
-  padding: 4em;
+  padding: 2em;
   font-size: 1.6rem;
+  max-width: 95rem;
+  border-radius: 4.5rem;
 }
 
 .cta__text {
   max-width: 40rem;
+  margin-top: 6.4rem;
 }
 
 .cta__heading {
@@ -143,4 +146,8 @@ main {
   border-radius: 9px;
   padding: 1em;
   font-weight: 700;
+}
+
+.cta__img {
+  justify-self: end;
 }
