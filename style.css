@@ -11,6 +11,9 @@
   --BORDER-COLOR: #949494;
 
   /* SHADOWS */
+
+  /* BORDER RADIUS */
+  --BORDER-RADIUS-CARD: 4.5rem;
 }
 
 /* Font Import */
@@ -72,14 +75,13 @@ body {
   color: var(--FONT-COLOR);
 }
 
-.hidden {
-  display: none;
-}
-
 main {
   margin: 20rem;
 }
 
+.hidden {
+  display: none;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -87,14 +89,15 @@ main {
 
 .heading-primary {
   font-size: 5.6rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 4.2rem;
+  line-height: 1;
 }
 
 .btn {
   background-color: var(--BGCOLOR-BTN);
   color: var(--FONT-COLOR-BTN);
   border-radius: 9px;
-  padding: 1em;
+  padding: 1.2em;
   font-weight: 700;
 }
 
@@ -105,7 +108,8 @@ main {
   padding: 2em;
   font-size: 1.6rem;
   max-width: 95rem;
-  border-radius: 4.5rem;
+  border-radius: var(--BORDER-RADIUS-CARD);
+  margin: 4.8rem auto;
 }
 
 .cta__text {
@@ -121,7 +125,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
 }
 
 .list__item {
@@ -145,7 +149,7 @@ main {
   border: 1px solid var(--BORDER-COLOR);
   border-radius: 9px;
   padding: 1.2em;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.6rem;
 }
 
 .cta__img {
@@ -156,4 +160,28 @@ main {
 
 .user-email {
   font-weight: 700;
+}
+
+.form__success {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  background-color: var(--BGCOLOR-CARD);
+  font-size: 1.6rem;
+  padding: 5.6rem;
+  max-width: 47rem;
+  border-radius: var(--BORDER-RADIUS-CARD);
+  margin: 0 auto;
+}
+
+.success__icon {
+  align-self: start;
+}
+
+.form__success p {
+  line-height: 1.5;
+}
+
+.form__success .heading-primary {
+  margin-bottom: 0;
 }
