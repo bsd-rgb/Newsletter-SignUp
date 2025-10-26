@@ -3,22 +3,51 @@
 const form = document.querySelector('.cta__form');
 const emailEl = document.querySelector('.user-email');
 const dismissBtnEl = document.querySelector('.btn__dismiss');
-const emailInput = document.querySelector('input');
+const emailField = document.querySelector('input');
 const cardEl = document.querySelector('.section__cta');
 const successEl = document.querySelector('.form__success');
+let errorEl = document.querySelector('.error-message');
+
+function validateField(field) {
+  // Browser checks the validity of the element (field)
+  if (!field.validity.valid) {
+    // Local to the
+    // const errorEl = field.parentElement.querySelector('.error-message');
+    errorEl.textContent = `${field.name.replace(
+      field.name[0],
+      field.name[0].toUpperCase()
+    )} is required`;
+    console.log('field is invalid');
+
+    return false;
+  }
+
+  console.log('field is valid');
+  errorEl.textContent = '';
+  return true;
+}
 
 function handleSubmit(e) {
   e.preventDefault();
-  emailEl.textContent = emailInput.value;
-  cardEl.classList.toggle('hidden');
-  successEl.classList.toggle('hidden');
+  const isValid = validateField(emailField);
+  if (isValid) {
+    console.log(`submitting`);
+    emailEl.textContent = emailField.value;
+    cardEl.classList.toggle('hidden');
+    successEl.classList.toggle('hidden');
+  } else {
+    console.log('error');
+  }
 }
 
 function dismiss() {
-  emailInput.value = '';
+  emailField.value = '';
   cardEl.classList.toggle('hidden');
   successEl.classList.toggle('hidden');
 }
 
 form.addEventListener('submit', handleSubmit);
 dismissBtnEl.addEventListener('click', dismiss);
+emailField.addEventListener('blur', () => {
+  validateField(emailField);
+});

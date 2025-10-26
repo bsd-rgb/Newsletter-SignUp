@@ -16,7 +16,7 @@
   </head>
   <body>
     <main>
-      <article class="section__cta grid">
+      <article class="section__cta container">
         <div class="cta__text">
           <h1 class="heading-primary">Stay updated!</h1>
           <p class="cta__subheading">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -36,9 +36,18 @@
           </ul>
 
           <!-- Sign-up form start -->
-          <form class="cta__form">
-            <label for="email">Email address</label>
-            <input id="email" name="email" type="email" placeholder="email@company.com" />
+          <form class="cta__form" novalidate>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="email@company.com"
+                required
+              />
+              <span class="error-message" aria-live="polite"></span>
+            </div>
             <button class="btn btn__form">Subscribe to monthly newsletter</button>
           </form>
         </div>
