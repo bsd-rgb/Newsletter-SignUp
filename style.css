@@ -189,10 +189,6 @@ main {
   margin-bottom: 0;
 }
 
-.hidden {
-  display: none;
-}
-
 /* Error Message */
 
 .error-message:empty {
@@ -218,3 +214,32 @@ main {
   border-bottom: 1px solid currentColor;
   padding-bottom: 1px;
 }
+
+/* Media Query */
+
+@media (max-width: 79em) {
+  .section__cta {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .cta__img {
+    content: url(./assets/images/illustration-sign-up-mobile.svg);
+    border-radius: 2rem;
+  }
+
+  .cta__text {
+    max-width: 46em;
+    margin-top: 3.6rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* 
+
+
+
+*/
