@@ -207,15 +207,15 @@ main {
   font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 700;
-  color: #ff6155;
+  color: var(--red);
   position: absolute;
   left: 40%;
 }
 
-input:user-invalid {
+input.invalid {
   background-color: #ff60551c;
-  color: #ff6155;
-  border: 1px solid var(--red);
+  color: var(--red);
+  border-color: var(--red);
 }
 
 /* Attribution */
@@ -227,7 +227,7 @@ input:user-invalid {
 
 .attribution a:link,
 .attribution a:visited {
-  color: #ff6155;
+  color: var(--red);
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 1px;
@@ -252,7 +252,7 @@ input:user-invalid {
   }
 
   .error-message {
-    left: 50%;
+    left: 47%;
     transform: translate(100%);
   }
 }
@@ -301,7 +301,6 @@ input:user-invalid {
   }
 
   .error-message {
-    left: 47%;
     transform: translate(50%);
   }
 }
