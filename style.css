@@ -9,6 +9,7 @@
   --BGCOLOR-BTN: #242742;
   --FONT-COLOR: #242742;
   --BORDER-COLOR: #949494;
+  --red: #ff6155;
 
   /* SHADOWS */
 
@@ -203,8 +204,18 @@ main {
 }
 
 .error-message {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 700;
   color: #ff6155;
-  margin-bottom: 1.6rem;
+  position: absolute;
+  left: 40%;
+}
+
+input:user-invalid {
+  background-color: #ff60551c;
+  color: #ff6155;
+  border: 1px solid var(--red);
 }
 
 /* Attribution */
@@ -238,6 +249,11 @@ main {
   .cta__text {
     max-width: 46em;
     margin-top: 3.6rem;
+  }
+
+  .error-message {
+    left: 50%;
+    transform: translate(100%);
   }
 }
 
@@ -282,6 +298,11 @@ main {
   }
   .success__icon {
     margin-top: 15rem;
+  }
+
+  .error-message {
+    left: 47%;
+    transform: translate(50%);
   }
 }
 

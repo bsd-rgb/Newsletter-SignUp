@@ -13,11 +13,7 @@ function validateField(field) {
   if (!field.validity.valid) {
     // Local to the
     // const errorEl = field.parentElement.querySelector('.error-message');
-    errorEl.textContent = `${field.name.replace(
-      field.name[0],
-      field.name[0].toUpperCase()
-    )} is required`;
-    console.log('field is invalid');
+    errorEl.textContent = `Valid ${field.name} required`;
 
     return false;
   }
@@ -35,6 +31,7 @@ function handleSubmit(e) {
     emailEl.textContent = emailField.value;
     cardEl.classList.toggle('hidden');
     successEl.classList.toggle('hidden');
+    form.reset();
   } else {
     console.log('error');
   }
