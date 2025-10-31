@@ -99,6 +99,14 @@ main {
   width: 100%;
 }
 
+/* link - visited, hover - active */
+
+.btn:hover,
+.btn:active {
+  background: linear-gradient(to right, #ff6a3a, #ff527b);
+  /* background-color: blue; */
+}
+
 /* SECTION: Call to Action (cta) */
 
 .section__cta {
