@@ -10,8 +10,11 @@
   --FONT-COLOR: #242742;
   --BORDER-COLOR: #949494;
   --red: #ff6155;
+  --red-transparent: rgba(255, 96, 85, 0.4);
+  --linear-gradient: linear-gradient(to right, #ff6a3a, #ff527b);
 
   /* SHADOWS */
+  --BOX-SHADOW-BTN: 0 2rem 2rem rgba(255, 82, 123, 0.4);
 
   /* BORDER RADIUS */
   --BORDER-RADIUS-CARD: 4.5rem;
@@ -105,7 +108,6 @@ main {
 .btn:hover,
 .btn:active {
   background: linear-gradient(to right, #ff6a3a, #ff527b);
-  /* background-color: blue; */
 }
 
 /* SECTION: Call to Action (cta) */
@@ -196,6 +198,11 @@ main {
 
 .form__success .heading-primary {
   margin-bottom: 0;
+}
+
+.btn__dismiss:hover,
+.btn__dismiss:active {
+  box-shadow: var(--BOX-SHADOW-BTN);
 }
 
 /* Error Message */
