@@ -261,7 +261,7 @@ input.invalid {
   }
 
   .error-message {
-    left: 47%;
+    left: 55%;
     transform: translate(100%);
   }
 }
@@ -310,6 +310,7 @@ input.invalid {
   }
 
   .error-message {
+    left: 50%;
     transform: translate(50%);
   }
 }
